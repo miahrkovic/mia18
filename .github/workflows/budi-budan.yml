@@ -1,0 +1,14 @@
+name: Drzi bazu budnom
+on:
+  schedule:
+    - cron: "17 6 */2 * *"
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          curl -sf -X POST "https://zetzhpkpophcszwgtizq.supabase.co/rest/v1/rpc/guest_get" \
+            -H "apikey: sb_publishable_bHjPfa7UMSCFmmtkMtw5OQ_oSvj36yH" \
+            -H "Content-Type: application/json" \
+            -d '{"p_code":"XXXXXX"}'
