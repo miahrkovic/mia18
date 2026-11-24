@@ -1,0 +1,9 @@
+{
+  "name": "Mia 18",
+  "short_name": "Mia 18",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#1b1726",
+  "theme_color": "#1b1726"
+}
